@@ -1,0 +1,24 @@
+.flowers {
+  position: relative;
+  transform: scale(0.9);
+}
+
+.flower {
+  position: absolute;
+  bottom: 10vmin;
+  transform-origin: bottom center;
+  z-index: 10;
+}
+
+.flower--1 {
+  animation: moving-flower-1 4s linear infinite;
+}
+
+.flower--1 .flower__line {
+  height: 70vmin;
+  animation-delay: 0.3s;
+}
+
+.flower__line.leaf--1 {
+  animation: blooming-leaf-right var(--t);
+}
